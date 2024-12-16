@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="images/jpg" href="./Images(web)/favicon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <title>EverGreen Hospital</title>
+    <link rel="stylesheet" href="./CSS/checkout.css">
+</head>
+<body>
+    <header>
+        <input type="checkbox" name="chk" id="chk1">
+        <section class="logo">
+            <img src="./images(web)/logo.png" alt="logo">  
+            <h1>EverGreen</h1>
+        </section>
+        
+        <section class="search-box">   
+            <form>
+                <input type="text" name="search" id="srch" placeholder="Search" aria-label="search">
+                <button type="submit" id="butn1">‎<i class="fa fa-search"></i></button>
+            </form>
+        </section>
+        <ul class="nav-ul">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Doctors</a></li>
+            <li><a href="./index.html">Pharmacy</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li>
+                <a href="#">‎<i class="fa fa-facebook"></i></a> &nbsp;
+                <a href="#">‎<i class="fa fa-twitter"></i></a> &nbsp;
+                <a href="#">‎<i class="fa fa-instagram"></i></a>
+            </li>
+        </ul>
+       
+        <section class="menu">
+            <label for="chk1">
+                <i class="fa fa-bars">‎</i>
+            </label>
+        </section>
+    </header>
+    <br><br><br><br><br><br>
+
+    <section class="container">
+        <form id="checkout-form">
+            <section class="row">
+                <section class="col">
+                    <h3 class="title">Billing Address</h3>
+                    
+                    <!-- Collect payment details -->
+                    <section class="inputBox">
+                        <span>Full Name :</span>
+                        <input type="text" placeholder="John Anderson" aria-label="full name" required>
+                    </section>
+                    <section class="inputBox">
+                        <span>Email :</span>
+                        <input type="email" placeholder="abcd@gmail.com" aria-label="email" required>
+                    </section>
+                    <section class="inputBox">
+                        <span>Address :</span>
+                        <input type="text" placeholder="Home-Town-State" aria-label="address" required>
+                    </section>
+                    <section class="inputBox">
+                        <span>City :</span>
+                        <input type="text" placeholder="City" aria-label="city" required>
+                    </section>
+    
+                    <section class="flex">
+                        <section class="inputBox">
+                            <span>State :</span>
+                            <input type="text" placeholder="State" aria-label="state" required>
+                        </section>
+                        <section class="inputBox">
+                            <span>Zip code :</span>
+                            <input type="text" placeholder="12345" aria-label="zip" required>
+                        </section>
+                    </section>
+                </section>
+                <section class="col">
+                    <h3 class="title">Payment</h3>
+                    <section class="inputBox">
+                        <span>Cards Accepted :</span>
+                        <img src="./Images(web)/Cardimages/card_img.png" alt="card_img">
+                    </section>
+                    <section class="inputBox">
+                        <span>Name on card :</span>
+                        <input type="text" placeholder="Mrs.John Anderson" aria-label="name" required>
+                    </section>
+                    <section class="inputBox">
+                        <span>Credit card number :</span>
+                        <input type="text" placeholder="1234-5678-9012-3456" maxlength="19" aria-label="card" required>
+                    </section>                       
+                    <section class="flex">
+                        <section class="inputBox">
+                            <span>Expire :</span>
+                            <input type="month" min="2024-10" max="2035-12" aria-label="month" required>
+                        </section>
+                        <section class="inputBox">
+                            <span>CVV :</span>
+                            <input type="number" max="999" min="000" maxlength="3" placeholder="123" aria-label="cvv" required>
+                        </section>
+                    </section>
+                </section>
+            </section>
+
+            <section class="order-summary">
+                <h3 class="title">Order Summary</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody id="order-summary-body">
+                        <!-- Order items will be dynamically added here -->
+                    </tbody>
+                </table>
+                <section class="total-price-container">
+                    <h3>Total Price: <span id="order-summary-total">Rs. 0.00</span></h3>
+                </section>
+            </section>
+            <input type="submit" value="Proceed to Checkout" class="submit-btn">
+        </form>
+    </section>    
+    
+    <section id="thank-you-message" class="thank-you-message" style="display: none;">
+        <section class="thank-you-content">
+            <span class="close-btn">&times;</span>
+            <h2>Payment received.Thank you for the purchase!</h2>
+            <p>Your order will be delivered by <span id="delivery-date"></span></p>
+        </section>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer-distributed">
+
+        <section class="footer-left">
+            <h3>Ever<span>Green</span></h3>
+    
+            <section class="footer-links">
+                <p class="footer-links">
+                    <a href=".#">Home</a>
+                    &nbsp;|&nbsp;
+                    <a href="./index.html">Pharmacy</a>
+                    &nbsp;|&nbsp;
+                    <a href="#">About Us</a>
+                </p>
+            </section>
+            <p class="footer-company-name">Copyright © 2024 <strong>EverGreen</strong> All rights reserved</p>
+        </section>
+    
+        <section class="footer-center">
+            <section>
+                <i class="fa fa-map-marker"></i>
+                <p>No.30/1. Kohuwala RD, <br>Colombo</p>
+            </section>
+    
+            <section>
+                <i class="fa fa-phone"></i>
+                <p>011 2492838 / 078 8233432</p>
+            </section>
+            <section>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:sagar00001.co@gmail.com">evergreen@gmail.com</a></p>
+            </section>
+        </section>
+        <section class="footer-right">
+            <p class="footer-company-about">
+                <span>About the company</span>
+                <strong>EverGreen</strong> is a government registerd Hospital.<br> All rights reserved.<br>Designed by Gokula Kuruppuarachchi.
+            </p>
+            <section class="footer-icons">
+                <a href="#">‎<i class="fa fa-facebook"></i></a>
+                <a href="#">‎<i class="fa fa-instagram"></i></a>
+                <a href="#">‎<i class="fa fa-linkedin"></i></a>
+                <a href="#">‎<i class="fa fa-twitter"></i></a>
+                <a href="#">‎<i class="fa fa-youtube"></i></a>
+            </section>
+        </section>
+      </footer>
+    <script src="./Java/checkout.js"></script>
+</body>
+</html>

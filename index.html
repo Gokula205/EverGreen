@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="images/jpg" href="./Images(web)/favicon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <title>EverGreen Hospital</title>
+    <link rel="stylesheet" href="./CSS/order.css">
+</head>
+<body>
+    <header>
+        <input type="checkbox" name="chk" id="chk1">
+        <section class="logo">
+            <img src="./images(web)/logo.png" alt="logo">  
+            <h1>EverGreen</h1>
+        </section>
+        
+        <section class="search-box">   
+            <form>
+                <input type="text" name="search" id="srch" placeholder="Search" aria-label="search">
+                <button type="submit" id="butn1">‎<i class="fa fa-search"></i></button>
+            </form>
+        </section>
+        <ul class="nav-ul">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Doctors</a></li>
+            <li><a href="./index.html">Pharmacy</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li>
+                <a href="#">‎<i class="fa fa-facebook"></i></a> &nbsp;
+                <a href="#">‎<i class="fa fa-twitter"></i></a> &nbsp;
+                <a href="#">‎<i class="fa fa-instagram"></i></a>
+            </li>
+        </ul>
+       
+        <section class="menu">
+            <label for="chk1">
+                <i class="fa fa-bars">‎</i>
+            </label>
+        </section>
+    </header>
+    <br><br>
+
+    <main>
+        <section class="order-section">
+            <h2 class="heading">
+                <span>Pharmacy</span>
+            </h2>
+            <form class="order-form">
+                <!-- Analgesics Section -->
+                <section id="Analgesics" class="form-group">
+                    <h2>Analgesics</h2>
+                    <section class="products">
+                        <!-- Paracetamol -->
+                        <section class="product">
+                            <img src="./Images(web)/Analgesics/Paracetamol.jpg" alt="Apple">
+                            <h3>Paracetamol <br> (500mg)</h3>
+                            <p class="price">Rs. 12 </p>
+                            <section>
+                                <label for="Paracetamol">Quantity :</label>
+                                <input type="number" id="Paracetamol" name="Paracetamol" min="0" placeholder="0">
+                            </section>
+                        </section>
+                        <!-- Aspirin -->
+                        <section class="product">
+                            <img src="./Images(web)/Analgesics/aspirine.png" alt="Aspirin ">
+                            <h3>Aspirin <br> (500mg)</h3>
+                            <p class="price">Rs. 15 </p>
+                            <section>
+                                <label for="Aspirin">Quantity :</label>
+                                <input type="number" id="Aspirin" name="Aspirin" min="0" placeholder="0">
+                            </section>
+                        </section>
+                        <!-- Tramadol -->
+                        <section class="product">
+                            <img src="./Images(web)/Analgesics/tramadol.jpg" alt="Tramadol">
+                            <h3>Tramadol <br> (50mg)</h3>
+                            <p class="price">Rs. 21 </p>
+                            <section>
+                                <label for="Tramadol">Quantity :</label>
+                                <input type="number" id="Tramadol" name="Tramadol" min="0" placeholder="0">
+                            </section>  
+                        </section>
+                        <!-- Opioid -->
+                        <section class="product">
+                            <img src="./Images(web)/Analgesics/opioid.jpg" alt="Opioid">
+                            <h3>Opioid <br> (30mg)</h3>
+                            <p class="price">Rs. 19 </p>
+                            <section>
+                                <label for="Opioid">Quantity :</label>
+                                <input type="number" id="Opioid" name="Opioid" min="0" placeholder="0">
+                            </section>
+                        </section>
+                        <!-- Amitriptyline -->
+                        <section class="product">
+                            <img src="./Images(web)/Analgesics/amitriptyline.png" alt="Amitriptyline">
+                            <h3>Amitriptyline <br> (10mg)</h3>
+                            <p class="price">Rs. 20 </p>
+                            <section>
+                                <label for="Amitriptyline">Quantity :</label>
+                                <input type="number" id="Amitriptyline" name="Amitriptyline" min="0" placeholder="0">
+                            </section>
+                        </section>
+                        <!-- Ibuprofen -->
+                        <section class="product">
+                            <img src="./Images(web)/Analgesics/ibuprofen.jpg" alt="Ibuprofen">
+                            <h3>Ibuprofen <br> (200mg)</h3>
+                            <p class="price">Rs. 56 </p>
+                            <section>
+                                <label for="Ibuprofen">Quantity :</label>
+                                <input type="number" id="Ibuprofen" name="Ibuprofen" min="0" placeholder="0">
+                            </section>
+                        </section>
+                        <!-- Naproxen -->
+                        <section class="product">
+                            <img src="./Images(web)/Analgesics/naproxen.png" alt="Naproxen">
+                            <h3>Naproxen <br> (250mg)</h3>
+                            <p class="price">Rs. 32 </p>
+                            <section>
+                                <label for="Naproxen">Quantity :</label>
+                                <input type="number" id="Naproxen" name="Naproxen" min="0" placeholder="0">
+                            </section>
+                        </section>
+                    </section>
+                </section>
+        
+                <!-- Antibiotics Section -->
+                <section id="Antibiotics" class="form-group">
+                    <h2>Antibiotics</h2>
+                    <section class="products">
+                        <!-- Penicillins -->
+                        <section class="product">
+                            <img src="./Images(web)/Antibiotics/penicillin.jpeg" alt="Penicillins">
+                            <h3>Penicillins <br> (400mg)</h3>
+                            <p class="price">Rs. 22 </p>
+                            <section>
+                                <label for="Penicillins">Quantity :</label>
+                                <input type="number" id="Penicillins" name="Penicillins" min="0" placeholder="0">
+                            </section>
+                        </section>
+                        <!-- Tetracylines -->
+                        <section class="product">
+                            <img src="./Images(web)/Antibiotics/tetracycline.png" alt="Tetracylines">
+                            <h3>Tetracylines <br> (250mg)</h3>
+                            <p class="price">Rs. 30 </p>
+                            <section>
+                                <label for="Tetracylines">Quantity :</label>
+                                <input type="number" id="Tetracylines" name="Tetracylines" min="0" placeholder="0">
+                            </section>
+                        </section>
+                        <!-- Cefuroxime -->
+                        <section class="product">
+                            <img src="./Images(web)/Antibiotics/cefuroxime.png" alt="Cefuroxime">
+                            <h3>Cefuroxime <br> (500mg)</h3>
+                            <p class="price">Rs. 31 </p>
+                            <section>
+                                <label for="Cefuroxime">Quantity :</label>
+                                <input type="number" id="Cefuroxime" name="Cefuroxime" min="0" placeholder="0">
+                            </section>
+                        </section>
+                        <!-- Amoxicillin -->
+                        <section class="product">
+                            <img src="./Images(web)/Antibiotics/amoxicillin.png" alt="Amoxicillin">
+                            <h3>Amoxicillin <br> (500mg)</h3>
+                            <p class="price">Rs. 25 </p>
+                            <section>
+                                <label for="Amoxicillin">Quantity :</label>
+                                <input type="number" id="Amoxicillin" name="Amoxicillin" min="0" placeholder="0">
+                            </section>
+                        </section>
+                        <!-- Azithromycin -->
+                        <section class="product">
+                            <img src="./Images(web)/Antibiotics/azithromycin.png" alt="Azithromycin">
+                            <h3>Azithromycin <br> (500mg)</h3>
+                            <p class="price">Rs. 28 </p>
+                            <section>
+                                <label for="Azithromycin">Quantity :</label>
+                                <input type="number" id="Azithromycin" name="Azithromycin" min="0" placeholder="0">
+                            </section>
+                        </section>
+                        <!-- Erythromycin -->
+                        <section class="product">
+                            <img src="./Images(web)/Antibiotics/erythromycin.png" alt="Erythromycin">
+                            <h3>Erythromycin <br> (500mg)</h3>
+                            <p class="price">Rs. 70 </p>
+                            <section>
+                                <label for="Erythromycin">Quantity :</label>
+                                <input type="number" id="Erythromycin" name="Erythromycin" min="0" placeholder="0">
+                            </section>
+                        </section>
+                        <!-- Clindamycin -->
+                        <section class="product">
+                            <img src="./Images(web)/Antibiotics/clindamycin.png" alt="Clindamycin">
+                            <h3>Clindamycin <br> (300mg)</h3>
+                            <p class="price">Rs. 16 </p>
+                            <section>
+                                <label for="Clindamycin">Quantity :</label>
+                                <input type="number" id="Clindamycin" name="Clindamycin" min="0" placeholder="0">
+                            </section>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- Antidepressants Section -->
+                <section id="Antidepressants" class="form-group">
+                    <h2>Antidepressants</h2>
+                    <section class="products">
+                        <!-- Citalopram -->
+                        <section class="product">
+                            <img src="./Images(web)/Antidepressants/citalopram.jpg" alt="Citalopram">
+                            <h3>Citalopram <br> (20mg)</h3>
+                            <p class="price">Rs. 32</p>
+                            <section>
+                                <label for="Citalopram">Quantity :</label>
+                                <input type="number" id="Citalopram" name="Citalopram" min="0" placeholder="0">
+                            </section>
+                        </section>
+                        <!-- Escitalopram -->
+                        <section class="product">
+                            <img src="./Images(web)/Antidepressants/escitalopram.png" alt="Escitalopram">
+                            <h3>Escitalopram <br> (20mg)</h3>
+                            <p class="price">Rs. 60</p>
+                            <section>
+                                <label for="Escitalopram">Quantity :</label>
+                                <input type="number" id="Escitalopram" name="Escitalopram" min="0" placeholder="0">
+                            </section>
+                        </section>
+                        <!-- Fluvoxamine -->
+                        <section class="product">
+                            <img src="./Images(web)/Antidepressants/fluvoxamine.jpg" alt="Fluvoxamine">
+                            <h3>Fluvoxamine <br> (50mg)</h3>
+                            <p class="price">Rs. 18</p>
+                            <section>
+                                <label for="Fluvoxamine">Quantity :</label>
+                                <input type="number" id="Fluvoxamine" name="Fluvoxamine" min="0" placeholder="0">
+                            </section>
+                        </section>
+                        <!-- Bupropion -->
+                        <section class="product">
+                            <img src="./Images(web)/Antidepressants/bupropion.png" alt="Bupropion">
+                            <h3>Bupropion <br> (75mg)</h3>
+                            <p class="price">Rs. 48</p>
+                            <section>
+                                <label for="Bupropion">Quantity :</label>
+                                <input type="number" id="Bupropion" name="Bupropion" min="0" placeholder="0">
+                            </section>
+                        </section>
+                        <!-- Mirtazapine -->
+                        <section class="product">
+                            <img src="./Images(web)/Antidepressants/mirtazapine.png" alt="Mirtazapine">
+                            <h3>Mirtazapine <br> (15mg)</h3>
+                            <p class="price">Rs. 60</p>
+                            <section>
+                                <label for="Mirtazapine">Quantity :</label>
+                                <input type="number" id="Mirtazapine" name="Mirtazapine" min="0" placeholder="0">
+                            </section>
+                        </section>
+                        <!-- Duloxetine -->
+                        <section class="product">
+                            <img src="./Images(web)/Antidepressants/duloxetine.png" alt="Duloxetine">
+                            <h3>Duloxetine <br> (30mg)</h3>
+                            <p class="price">Rs. 19</p>
+                            <section>
+                                <label for="Duloxetine">Quantity :</label>
+                                <input type="number" id="Duloxetine" name="Duloxetine" min="0" placeholder="0">
+                            </section>
+                        </section>
+                        <!-- Trimipramine -->
+                        <section class="product">
+                            <img src="./Images(web)/Antidepressants/trimipramine.png" alt="Trimipramine">
+                            <h3>Trimipramine <br> (100mg)</h3>
+                            <p class="price">Rs. 79</p>
+                            <section>
+                                <label for="Trimipramine">Quantity :</label>
+                                <input type="number" id="Trimipramine" name="Trimipramine" min="0" placeholder="0">
+                            </section>
+                        </section>
+                    </section>
+                </section>
+        
+                <!-- Antihistamines Section -->
+                <section id="Antihistamines" class="form-group">
+                    <h2>Antihistamines</h2>
+                    <section class="products">
+                        <!-- Benadryl -->
+                        <section class="product">
+                            <img src="./Images(web)/Antihistamines/benadryl.png" alt="Benadryl">
+                            <h3>Benadryl <br> (25mg)</h3>
+                            <p class="price">Rs. 18</p>
+                            <section>
+                                <label for="Benadryl">Quantity :</label>
+                                <input type="number" id="Benadryl" name="Benadryl" min="0" placeholder="0">
+                            </section>
+                        </section>
+                        <!-- Claritin -->
+                        <section class="product">
+                            <img src="./Images(web)/Antihistamines/claritin.png" alt="Claritin">
+                            <h3>Claritin <br> (10mg)</h3>
+                            <p class="price">Rs. 20</p>
+                            <section>
+                                <label for="Claritin">Quantity :</label>
+                                <input type="number" id="Claritin" name="Claritin" min="0" placeholder="0">
+                            </section>
+                        </section>
+                        <!-- Fexofenadine -->
+                        <section class="product">
+                            <img src="./Images(web)/Antihistamines/fexofenadine.png" alt="Fexofenadine">
+                            <h3>Fexofenadine <br> (180mg)</h3>
+                            <p class="price">Rs. 19</p>
+                            <section>
+                                <label for="Fexofenadine">Quantity :</label>
+                                <input type="number" id="Fexofenadine" name="Fexofenadine" min="0" placeholder="0">
+                            </section>
+                        </section>
+                        <!-- Zyrtec -->
+                        <section class="product">
+                            <img src="./Images(web)/Antihistamines/zyrtec.png" alt="Zyrtec">
+                            <h3>Zyrtec <br> (10mg)</h3>
+                            <p class="price">Rs. 25</p>
+                            <section>
+                                <label for="Zyrtec">Quantity :</label>
+                                <input type="number" id="Zyrtec" name="Zyrtec" min="0" placeholder="0">
+                            </section>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- Antihypertensives Section -->
+                <section id="Antihypertensives" class="form-group">
+                    <h2>Antihypertensives</h2>
+                    <section class="products">
+                        <!-- Amlodipine -->
+                        <section class="product">
+                            <img src="./Images(web)/Antihypertensives/amlodipine.png" alt="Amlodipine">
+                            <h3>Amlodipine <br> (5mg)</h3>
+                            <p class="price">Rs. 10</p>
+                            <section>
+                                <label for="Amlodipine">Quantity :</label>
+                                <input type="number" id="Amlodipine" name="Amlodipine" min="0" placeholder="0">
+                            </section>
+                        </section>
+                        <!-- Atenolol -->
+                        <section class="product">
+                            <img src="./Images(web)/Antihypertensives/atenolol.png" alt="Atenolol">
+                            <h3>Atenolol <br> (50mg)</h3>
+                            <p class="price">Rs. 24</p>
+                            <section>
+                                <label for="Atenolol">Quantity :</label>
+                                <input type="number" id="Atenolol" name="Atenolol" min="0" placeholder="0">
+                            </section>
+                        </section>
+                        <!-- Benazepril -->
+                        <section class="product">
+                            <img src="./Images(web)/Antihypertensives/benazepril.png" alt="Benazepril">
+                            <h3>Benazepril <br> (5mg)</h3>
+                            <p class="price">Rs. 36</p>
+                            <section>
+                                <label for="Benazepril">Quantity :</label>
+                                <input type="number" id="Benazepril" name="Benazepril" min="0" placeholder="0">
+                            </section>
+                        </section>
+                        <!-- Bisoprolol -->
+                        <section class="product">
+                            <img src="./Images(web)/Antihypertensives/bisoprolol.png" alt="Bisoprolol">
+                            <h3>Bisoprolol <br> (5mg)</h3>
+                            <p class="price">Rs. 20</p>
+                            <section>
+                                <label for="Bisoprolol">Quantity :</label>
+                                <input type="number" id="Bisoprolol" name="Bisoprolol" min="0" placeholder="0">
+                            </section>
+                        </section>
+                        <!-- Captopril -->
+                        <section class="product">
+                            <img src="./Images(web)/Antihypertensives/captopril.png" alt="Captopril">
+                            <h3>Captopril <br> (25mg)</h3>
+                            <p class="price">Rs. 20</p>
+                            <section>
+                                <label for="Captopril">Quantity :</label>
+                                <input type="number" id="Captopril" name="Captopril" min="0" placeholder="0">
+                            </section>
+                        </section>
+                        <!-- Furosemide -->
+                        <section class="product">
+                            <img src="./Images(web)/Antihypertensives/furosemide.png" alt="Furosemide">
+                            <h3>Furosemide <br> (40mg)</h3>
+                            <p class="price">Rs. 24</p>
+                            <section>
+                                <label for="Furosemide">Quantity :</label>
+                                <input type="number" id="Furosemide" name="Furosemide" min="0" placeholder="0">
+                            </section>
+                        </section>
+                        <!-- Metoprolol -->
+                        <section class="product">
+                            <img src="./Images(web)/Antihypertensives/metoprolol.png" alt="Metoprolol">
+                            <h3>Metoprolol <br> (10mg)</h3>
+                            <p class="price">Rs. 36</p>
+                            <section>
+                                <label for="Metoprolol">Quantity :</label>
+                                <input type="number" id="Metoprolol" name="Metoprolol" min="0" placeholder="0">
+                            </section>
+                        </section>
+                        <!-- Propranolol -->
+                        <section class="product">
+                            <img src="./Images(web)/Antihypertensives/propranolol.png" alt="Propranolol">
+                            <h3>Propranolol <br> (10mg)</h3>
+                            <p class="price">Rs. 20</p>
+                            <section>
+                                <label for="Propranolol">Quantity :</label>
+                                <input type="number" id="Propranolol" name="Propranolol" min="0" placeholder="0">
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </form>
+        </section>
+        <section id="order-summary" class="form-group">
+            <h2>Order Summary</h2>
+            <table>
+                <thead>
+                <tr>
+                    <th>Items</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>‎</th>
+                </tr>
+                </thead>
+                <tbody id="order-items">
+                <!-- Example row -->
+                <tr>
+                    <td class="item">
+                    <img src="" alt="Items">
+                    </td>
+                    <td class="quantity"></td>
+                    <td class="price"></td>
+                    <td class="actions"></td>
+                </tr>
+                <!-- More order items will be dynamically added here -->
+                </tbody>
+                <tfoot> 
+                    <tr>
+                        <td colspan="3">Total Price:</td>
+                        <td id="total-price">Rs. 0</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <section class="buttons">
+            <button type="button" id="add-favorites-btn">Add to Favorites</button>
+            <button type="button" id="apply-favorites-btn">Apply Favorites</button>
+            <button type="button" id="remove-favorites-btn">Remove Favorites</button>
+            </section>  
+            <button class="btn1" onclick="navigateToCheckout()">Buy Now</button>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer class="footer-distributed">
+
+    <section class="footer-left">
+        <h3>Ever<span>Green</span></h3>
+
+        <section class="footer-links">
+            <p class="footer-links">
+                <a href=".#">Home</a>
+                &nbsp;|&nbsp;
+                <a href="./index.html">Pharmacy</a>
+                &nbsp;|&nbsp;
+                <a href="#">About Us</a>
+            </p>
+        </section>
+        <p class="footer-company-name">Copyright © 2024 <strong>EverGreen</strong> All rights reserved</p>
+    </section>
+
+    <section class="footer-center">
+        <section>
+            <i class="fa fa-map-marker"></i>
+            <p>No.30/1. Kohuwala RD, <br>Colombo</p>
+        </section>
+
+        <section>
+            <i class="fa fa-phone"></i>
+            <p>011 2492838 / 078 8233432</p>
+        </section>
+        <section>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:sagar00001.co@gmail.com">evergreen@gmail.com</a></p>
+        </section>
+    </section>
+    <section class="footer-right">
+        <p class="footer-company-about">
+            <span>About the company</span>
+            <strong>EverGreen</strong> is a government registerd Hospital.<br> All rights reserved.<br>Designed by Gokula Kuruppuarachchi.
+        </p>
+        <section class="footer-icons">
+            <a href="#">‎<i class="fa fa-facebook"></i></a>
+            <a href="#">‎<i class="fa fa-instagram"></i></a>
+            <a href="#">‎<i class="fa fa-linkedin"></i></a>
+            <a href="#">‎<i class="fa fa-twitter"></i></a>
+            <a href="#">‎<i class="fa fa-youtube"></i></a>
+        </section>
+    </section>
+  </footer>
+  <script src="./Java/order.js"></script>
+</body>
+</html>
